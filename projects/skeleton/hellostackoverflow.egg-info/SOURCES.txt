@@ -1,0 +1,7 @@
+setup.py
+hellostackoverflow.egg-info/PKG-INFO
+hellostackoverflow.egg-info/SOURCES.txt
+hellostackoverflow.egg-info/dependency_links.txt
+hellostackoverflow.egg-info/top_level.txt
+name/__init__.py
+name/firstn.py
