@@ -9,6 +9,7 @@ setup(
     description='taking you to the future',
     license='mit',
     packages=['name'],
+    scripts =['bin/testbin'],
     author='king of Time',
     author_email='oxygen@gmail.com',
     keywords=['future'],

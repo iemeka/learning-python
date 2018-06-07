@@ -4,14 +4,15 @@ except ImportError:
 	from distutils.core import setup
 
 setup(
-    name='testp',
+    name='iread',
     version='0.0.1',
-    description='learning-py',
+    description='read your text just the way you like it!',
     license='MIT',
-    packages=['testp'],
-    author='steve jobs',
-    author_email='zukarburg@gmail.com',
+    packages=['readtxt'],
+    scripts =["bin/readit"],
+    author='emeka',
+    author_email='mekstines@gmail.com',
     keywords=[],
-    url='nothigfor'
+    url=''
 )
 
