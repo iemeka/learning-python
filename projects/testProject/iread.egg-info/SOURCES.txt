@@ -1,0 +1,10 @@
+setup.py
+bin/readit
+iread.egg-info/PKG-INFO
+iread.egg-info/SOURCES.txt
+iread.egg-info/dependency_links.txt
+iread.egg-info/top_level.txt
+readtxt/__init__.py
+readtxt/loading.py
+readtxt/name.py
+readtxt/readtxt.py
