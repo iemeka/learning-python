@@ -78,15 +78,17 @@ dictor = [
 dictor = collections.OrderedDict(dictor)
 for i in dictor:
 	print dictor[i]
+	if dictor[i] == 'hot':
+		print dictor[2]
 
 
-fat = collections.OrderedDict()
+# fat = collections.OrderedDict()
 
-fat[45] = 54
-fat[35] = 53
-fat[4849] = 0
-fat[65] = 56
-fat[40] = 04
+# fat[45] = 54
+# fat[35] = 53
+# fat[4849] = 0
+# fat[65] = 56
+# fat[40] = 04
 
-for o,p in fat.items():
-	print o , p
+# for o,p in fat.items():
+# 	print o , p
