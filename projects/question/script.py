@@ -1,6 +1,5 @@
 #validate base-word
 def check(a):
-	print "Type an eight letter word"
 	print "~~~~~~~~~~~~~~~~~~~~~~~~~"
 	if len(a) != 8:
 		print "\n Not up to eight letters \n"
@@ -12,44 +11,47 @@ def eight(num):
 
 # Analyse and compare.**level one**
 def typeFirst_mid():
-	print "Type a word that begins with the fourth letter"
 	print "~~~~~~~~~~~~~~~~~~~~~~~~~"
-	first_mid = raw_input(": ")
+	first_mid = raw_input("Type a word that begins with the fourth letter: ")
 	if first_mid[0] == base_word[3]:
 		print "passed! onto the next one"
 		typeSecond_mid()
 	else:
+		print "incorrect!"
 		return typeFirst_mid()
+	return first_mid
 
 def typeSecond_mid():
-	print "Type a word that begins with fifth letter"
 	print "~~~~~~~~~~~~~~~~~~~~~~~~~"
-	second_mid = raw_input(": ")
+	second_mid = raw_input("Type a word that begins with fifth letter: ")
 	if second_mid[0] == base_word[4]:
 		print "congratulations! Next level"
 		typeLast_first()
 	else:
+		print "incorrect!"
 		return typeSecond_mid()
+	return second_mid
 
 def typeLast_first():
-	print "Type a word that contains both the fourth and last letter"
 	print "~~~~~~~~~~~~~~~~~~~~~~~~~"
-	A_word = raw_input(": ")
-	if  (base_word[7], base_word[0] in A_word):
+	A_word = raw_input("Type a word that contains both first and last letter: ")
+	if  (base_word[7] in A_word) and (base_word[0] in A_word):
 		print "contained!! continue"
 		typeSecond_seventh()
 	else:
 		return typeLast_first()
+	return A_word
 
 def typeSecond_seventh():
-	print "Type a word tha contains both second and seventh letter"
 	print "~~~~~~~~~~~~~~~~~~~~~~~~~"
-	the_word = raw_input(": ")
-	if (base_word[1], base_word[6] in the_word):
+	the_word = raw_input("Type a word that contains both second and seventh letter: ")
+	if (base_word[1] in the_word) and (base_word[6] in the_word):
 		print "first level completed"
 		level2()
 	else:
+		print "incorrect!"
 		return typeSecond_seventh()
+	return the_word
 
 def level2():
 	print "~~~~~~~~~~~~~~~~~~~~~~~~~"
@@ -63,5 +65,6 @@ def level2():
 
 
 
-base_word = eight(check(raw_input(": ")))
+base_word = eight(check(raw_input("Type an eight letter word: ")))
 typeFirst_mid()
+
